@@ -1,0 +1,147 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "BankingApplication",
+    "version": "1.0"
+  },
+  "paths": {
+    "/BankingApp/GetAccountDetailsByID": {
+      "get": {
+        "tags": [
+          "BankingApp"
+        ],
+        "operationId": "GetAccountDetailsById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/BankingApp/GetAllAccounts": {
+      "get": {
+        "tags": [
+          "BankingApp"
+        ],
+        "operationId": "GetAllAccounts",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/BankingApp/Deposit": {
+      "post": {
+        "tags": [
+          "BankingApp"
+        ],
+        "operationId": "UpdatedAccountAfterDeposit",
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "amount",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/BankingApp/Withdraw": {
+      "post": {
+        "tags": [
+          "BankingApp"
+        ],
+        "operationId": "UpdatedAccountAfterWithdraw",
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "amount",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/BankingApp/Transfer": {
+      "post": {
+        "tags": [
+          "BankingApp"
+        ],
+        "operationId": "UpdatedAccountAfterTransfer",
+        "parameters": [
+          {
+            "name": "fromAccountid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "toAccountId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "amount",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

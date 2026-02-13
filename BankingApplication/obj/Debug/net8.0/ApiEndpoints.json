@@ -1,0 +1,101 @@
+[
+  {
+    "ContainingType": "BankingApplication.Controllers.BankingAppController",
+    "Method": "UpdatedAccountAfterDeposit",
+    "RelativePath": "BankingApp/Deposit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "amount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UpdatedAccountAfterDeposit"
+  },
+  {
+    "ContainingType": "BankingApplication.Controllers.BankingAppController",
+    "Method": "GetAccountDetailsById",
+    "RelativePath": "BankingApp/GetAccountDetailsByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetAccountDetailsById"
+  },
+  {
+    "ContainingType": "BankingApplication.Controllers.BankingAppController",
+    "Method": "GetAllAccounts",
+    "RelativePath": "BankingApp/GetAllAccounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetAllAccounts"
+  },
+  {
+    "ContainingType": "BankingApplication.Controllers.BankingAppController",
+    "Method": "UpdatedAccountAfterTransfer",
+    "RelativePath": "BankingApp/Transfer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromAccountid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "toAccountId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "amount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UpdatedAccountAfterTransfer"
+  },
+  {
+    "ContainingType": "BankingApplication.Controllers.BankingAppController",
+    "Method": "UpdatedAccountAfterWithdraw",
+    "RelativePath": "BankingApp/Withdraw",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "amount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UpdatedAccountAfterWithdraw"
+  }
+]
